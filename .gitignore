@@ -1,0 +1,30 @@
+.DS_Store
+
+# swiftpm / xcode
+.build/
+.swiftpm/
+*.xcodeproj/xcuserdata/
+xcuserdata/
+DerivedData/
+*.xcworkspace/xcuserdata/
+
+# built app
+*.app
+*.dSYM/
+
+# whisper
+vendor/
+.coreml-venv/
+*.gturbo
+*.bin
+*.mlmodelc/
+
+# python
+__pycache__/
+*.pyc
+
+# secrets
+.env
+*.p12
+*.pem
+*.key
