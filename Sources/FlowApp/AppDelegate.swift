@@ -44,6 +44,11 @@ final class AppDelegate: NSObject, NSApplicationDelegate {
         mainWindowController.show()
     }
 
+    // prevent teardown warning when quit
+    func applicationWillTerminate(_ notification: Notification) {
+        whisperContext = nil
+    }
+
     func applicationShouldTerminateAfterLastWindowClosed(_ sender: NSApplication) -> Bool { false }
 
     func applicationShouldHandleReopen(_ sender: NSApplication, hasVisibleWindows flag: Bool) -> Bool {

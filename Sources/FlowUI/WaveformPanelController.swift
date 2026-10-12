@@ -20,7 +20,7 @@ public final class WaveformPanelController {
         panel.backgroundColor = .clear
         panel.hasShadow = true
         panel.level = .floating
-        panel.collectionBehavior = [.canJoinAllSpaces, .fullScreenAuxiliary, .stationary]
+        panel.collectionBehavior = [.moveToActiveSpace, .fullScreenAuxiliary]
         panel.ignoresMouseEvents = true
         panel.hidesOnDeactivate = false
 
